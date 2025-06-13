@@ -1,0 +1,14 @@
+WEST TOKAMAK BENCHMARKING ANALYSIS REPORT
+==================================================
+
+Baseline: tau=1337s, T=50M°C, P=2.0MW
+
+LAWSON_SWEEP:
+  Status: SUCCESS
+
+POWER_REDUCTION:
+  Status: SUCCESS
+
+TEMPERATURE_UPLIFT:
+  Status: SUCCESS
+
