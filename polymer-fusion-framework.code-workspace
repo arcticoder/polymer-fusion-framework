@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../unified-lqg-qft"
+		},
+		{
+			"path": "../unified-lqg"
+		},
+		{
+			"path": "../unified-gut-polymerization"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"powershell.cwd": "unified-lqg-qft"
+	}
+}
