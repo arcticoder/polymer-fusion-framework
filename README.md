@@ -162,12 +162,12 @@ python compile_latex_writeup.py
 ## Results & Validation
 
 ### Key Achievements
-- ✅ **Record-Breaking Performance**: 5 configurations outperform WEST world record
-- ✅ **Enhanced Fusion Cross-Sections**: 2-10x enhancement demonstrated
-- ✅ **25T Superconducting Systems**: Complete performance characterization
-- ✅ **Economic Viability**: Grid parity achieved ($0.03-0.05/kWh)
-- ✅ **Experimental Validation**: WEST tokamak data calibration
-- ✅ **Market Readiness**: $1-4 trillion annual revenue potential by 2050
+- **Performance**: 5 configurations outperform WEST world record
+- **Enhanced Fusion Cross-Sections**: 2-10x enhancement demonstrated
+- **25T Superconducting Systems**: Performance characterization
+- **Economic Viability**: Grid parity achieved ($0.03-0.05/kWh)
+- **Experimental Validation**: WEST tokamak data calibration
+- **Market Readiness**: $1-4 trillion annual revenue potential by 2050
 
 ### Performance Milestones
 - **Best Confinement**: 11,130s (8.32× WEST record)
@@ -230,7 +230,7 @@ For questions about the polymer fusion framework, please refer to the documentat
 
 ---
 
-**Framework Status**: ✅ **OPERATIONAL**
+**Framework Status**: **OPERATIONAL**
 - Core simulations: Working
 - WEST optimization: **WORLD RECORD BEATEN**
 - HTS analysis: Complete
