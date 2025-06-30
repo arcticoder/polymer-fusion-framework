@@ -11,23 +11,23 @@ The Polymer Fusion Framework represents a breakthrough in fusion energy technolo
 The fundamental enhancement arises from LQG polymer modifications to the quantum field theory describing fusion reactions:
 
 #### 1.1 Modified Schrödinger Equation
-```latex
+```math
 i\hbar\frac{\partial\psi}{\partial t} = \hat{H}_{\text{polymer}}\psi
 ```
 
 Where the polymer Hamiltonian is:
-```latex
+```math
 \hat{H}_{\text{polymer}} = \hat{H}_0 + \Delta\hat{H}_{\text{LQG}}
 ```
 
 #### 1.2 Polymer Enhancement Factor
 The enhancement factor $f_{\text{polymer}}$ modifies the fusion cross-section:
-```latex
+```math
 \sigma_{\text{enhanced}} = f_{\text{polymer}} \cdot \sigma_{\text{standard}}
 ```
 
 With:
-```latex
+```math
 f_{\text{polymer}} = 1 + \alpha_{\text{LQG}} \cdot \left(\frac{E_{\text{beam}}}{E_{\text{Planck}}}\right)^{\beta}
 ```
 
@@ -38,7 +38,7 @@ Where:
 
 #### 1.3 Temperature-Dependent Enhancement
 The polymer enhancement exhibits temperature dependence:
-```latex
+```math
 f_{\text{polymer}}(T) = f_0 \cdot \left(1 + \gamma \cdot \frac{k_B T}{m_p c^2}\right)
 ```
 
@@ -46,30 +46,30 @@ f_{\text{polymer}}(T) = f_0 \cdot \left(1 + \gamma \cdot \frac{k_B T}{m_p c^2}\r
 
 #### 2.1 Modified Confinement Time
 The polymer-enhanced confinement time follows:
-```latex
+```math
 \tau_{\text{polymer}} = \tau_{\text{base}} \cdot f_{\text{polymer}} \cdot \sqrt{\frac{B^2}{B_0^2}} \cdot \left(\frac{T}{T_0}\right)^{-1/2}
 ```
 
 #### 2.2 Power Balance Equation
-```latex
+```math
 P_{\text{fusion}} = P_{\text{loss}} + P_{\text{alpha}}
 ```
 
 With polymer-enhanced fusion power:
-```latex
+```math
 P_{\text{fusion}} = \frac{1}{4} n_D n_T \langle\sigma v\rangle_{\text{polymer}} \cdot E_{\text{fusion}} \cdot V
 ```
 
 ### 3. Superconductor Physics
 
 #### 3.1 Critical Current Density with Polymer Enhancement
-```latex
+```math
 J_c = J_{c0} \cdot \left(1 - \frac{T}{T_c}\right)^{3/2} \cdot \left(\frac{B_c}{B}\right)^{1/2} \cdot f_{\text{polymer}}^{\text{HTS}}
 ```
 
 #### 3.2 Magnetic Field Capability
 The enhanced HTS systems achieve fields up to:
-```latex
+```math
 B_{\text{max}} = \mu_0 I_{\text{max}} \cdot \frac{N}{2\pi R} \cdot f_{\text{polymer}}^{\text{coil}}
 ```
 
@@ -83,7 +83,7 @@ B_{\text{max}} = \mu_0 I_{\text{max}} \cdot \frac{N}{2\pi R} \cdot f_{\text{poly
 - **Performance Factor**: $\mathcal{P} = \frac{\tau}{\tau_{\text{WEST}}} \cdot \frac{P_{\text{WEST}}}{P} = 29.98$
 
 #### 1.2 Optimization Parameters
-```latex
+```math
 \begin{align}
 f_{\text{polymer}}^{\text{optimal}} &= 2.85 \\
 B_{\text{field}} &= 24.5 \text{ T} \\
@@ -95,7 +95,7 @@ T_{\text{plasma}} &= 15.7 \text{ keV}
 ### 2. Economic Viability
 
 #### 2.1 Levelized Cost of Energy
-```latex
+```math
 \text{LCOE} = \frac{\text{CAPEX} + \sum_{t=1}^{n} \frac{\text{OPEX}_t}{(1+r)^t}}{\sum_{t=1}^{n} \frac{E_t}{(1+r)^t}}
 ```
 
@@ -110,7 +110,7 @@ Achieving: **LCOE = $0.03-0.05/kWh** (grid parity)
 
 #### 3.1 Liquid Metal Divertor Physics
 **MHD Coupling in Li-Sn Eutectic**:
-```latex
+```math
 \mathbf{J} \times \mathbf{B} = -\nabla p + \mu \nabla^2 \mathbf{v} + \rho \mathbf{g}
 ```
 
@@ -121,7 +121,7 @@ Key parameters:
 
 #### 3.2 AI-Optimized Coil Geometry
 **Genetic Algorithm Optimization**:
-```latex
+```math
 \text{Fitness} = w_1 \cdot \frac{\tau}{\tau_{\text{ref}}} + w_2 \cdot \frac{P_{\text{ref}}}{P} + w_3 \cdot \eta_{\text{coil}}
 ```
 

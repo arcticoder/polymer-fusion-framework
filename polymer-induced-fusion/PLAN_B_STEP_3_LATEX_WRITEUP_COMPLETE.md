@@ -63,7 +63,7 @@
 ## Key Mathematical Content
 
 ### Core Equations:
-```latex
+```math
 % Polymer enhancement
 sigma_poly/sigma_0 = [sinc(mu*sqrt(s))]^n * (1 + alpha_coupling * F(E))
 

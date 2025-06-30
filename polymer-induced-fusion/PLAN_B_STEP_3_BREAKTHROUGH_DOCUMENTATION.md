@@ -41,7 +41,7 @@
 ## 🔬 Scientific Content
 
 ### **Mathematical Framework:**
-```latex
+```math
 % Core polymer enhancement equation
 σ_poly/σ_0 = [sinc(μ√s)]^n × (1 + α_coupling F(E))
 
