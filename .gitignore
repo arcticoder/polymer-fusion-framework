@@ -223,3 +223,5 @@ secrets.env
 .secrets
 
 .github/instructions/copilot-instructions.md
+
+.github/
