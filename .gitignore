@@ -221,3 +221,5 @@ Thumbs.db
 config_local.py
 secrets.env
 .secrets
+
+.github/instructions/copilot-instructions.md
