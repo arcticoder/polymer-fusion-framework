@@ -2,62 +2,61 @@
 
 A simulation framework for polymer-enhanced fusion research, studying Loop Quantum Gravity (LQG) polymer physics applications to fusion energy systems. This repository includes theoretical models, simulation codes, and analysis tools for polymer-fusion interactions.
 
-## Simulation Results
+```markdown
+# Polymer Fusion Framework — Research Notes
 
-**June 2025 Update**: Polymer-fusion framework simulation results:
-- **Primary Configuration**: 11,130s confinement time (8.32× WEST record) with 72% power reduction
-- **Configuration Performance**: 5 configurations showing improved confinement and power efficiency  
-- **Economic Analysis**: Grid parity analysis with kWh costs estimated at $0.03-0.05
-- **Performance Metrics**: Up to 29.98× improvement in simulation parameters vs WEST baseline
+This repository collects simulation code, modeling artifacts, and example-run analysis used to explore polymer-enhanced fusion concepts. The content is research-stage and intended for reproducibility, peer review, and method development. Numerical results are model- and configuration-dependent; they should be reported only with accompanying artifacts that enable independent verification.
 
-## Overview
+Changes in this hedging pass
 
-This repository contains the polymer-fusion research framework, including theoretical models, simulation codes, experimental validation tools, and optimization algorithms for studying polymer-enhanced fusion reactions and reactor design. The framework integrates developments in high-temperature superconductors, AI-optimized coil geometry, liquid metal divertors, and dynamic ELM mitigation.
+- Replaced absolutist and promotional language (e.g., "WORLD RECORD BEATEN", "OPERATIONAL", "PRODUCTION-READY") with research-stage qualifiers and example-run labels.
+- Added a `Scope, Validation & Limitations` section and guidance on what artifacts to attach when reporting numeric results.
+- Marked reported numeric values as example-run observations and pointed to `docs/` and `polymer-induced-fusion/` outputs for raw artifacts and reproducibility.
 
-## Repository Structure
+## Summary — Scope & Intended Use
 
-### `polymer-induced-fusion/`
-The main simulation and analysis framework containing:
+- Status: Research prototype and simulation framework; further engineering validation and independent experimental verification required before production or deployment.
+- Purpose: Provide reproducible simulation and analysis tools for polymer-enhanced fusion research and method validation.
+- Audience: Researchers and engineers performing reproducible experiments and sensitivity/UQ studies.
 
-#### Core Simulation Modules
-- **`hts_materials_simulation.py`** - High-Temperature Superconductor (HTS) coils simulation
-  - REBCO tape performance under 20-25 T magnetic fields
-  - Cyclic load analysis and quench detection
-  - Thermal runaway threshold modeling
-  - Polymer enhancement factors up to 2.85
-- **`liquid_metal_divertor_simulation.py`** - Liquid metal divertor modeling  
-  - Li-Sn eutectic film MHD coupling under 3T fields
-  - 20 MW/m² heat flux capability
-  - Erosion-deposition equilibrium modeling
-- **`west_performance_optimizer.py`** - WEST tokamak performance optimization
-  - Genetic algorithm optimization
-  - Multi-objective configuration analysis
-  - Polymer enhancement integration
-- **`integrated_gut_polymer_optimization.py`** - GUT-polymer optimization framework
-- **`unified_polymer_energy_analysis.py`** - Energy analysis tools
+## Scope, Validation & Limitations
 
-#### Research Plans & Results
+Scope
+- Focus: numerical experiments, sensitivity analysis, and exploratory modeling for polymer-enhanced fusion concepts.
+- Intended use: method development, reproducibility testing, and peer-reviewed study.
 
-**Plan A: Direct Mass-Energy Conversion**
-- **`plan_a_direct_mass_energy.py`** - Direct conversion simulation
-- **`plan_a_step3_focused_demo.py`** - Energy conversion analysis
-- **`plan_a_step4_net_cost.py`** - Economic feasibility analysis
-- **`plan_a_step5_reactor_design.py`** - Advanced reactor design
-- **`plan_a_complete_demonstration.py`** - Complete demonstration framework
+Validation & Reproducibility
+- Required artifacts for externally-published claims: raw outputs (CSV/JSON), plotting scripts, the exact commit id used, and an environment manifest (`pip freeze` or `conda env export`).
+- Repro steps: create a virtualenv, install `requirements.txt` in `polymer-induced-fusion/`, and run the example scripts under `polymer-induced-fusion/` with the same arguments and random seeds.
+- UQ guidance: include diagnostics (effective sample size, Gelman-Rubin R̂, convergence plots) when reporting uncertainty intervals.
 
-**Plan B: Polymer-Enhanced Fusion**
-- **`plan_b_polymer_fusion.py`** - Polymer fusion enhancement
-- **`plan_b_step1_polymer_tunneling.py`** - Quantum tunneling analysis
-- **`plan_b_step2_reactor_simulations.py`** - Reactor simulation framework
+Limitations
+- Performance figures in this README are conditional on simulation configurations and calibration against specific datasets; do not treat them as production guarantees.
+- Experimental or hardware claims must be vetted by domain experts and appropriate safety/regulatory review prior to experimental implementation.
 
-#### Analysis & Validation Tools
-- **`analyze_enhancement_physics.py`** - Physics enhancement analysis
-- **`validate_fusion_power.py`** - Fusion power validation
-- **`west_calibrated_polymer_analysis.py`** - WEST tokamak calibrated analysis
-- **`antimatter_cost_analysis.py`** - Antimatter production economics
+## Reporting Guidance
 
-#### Documentation & Reports
-- **`polymer_fusion_framework.tex`** - Complete LaTeX documentation
+- Place raw outputs under `polymer-induced-fusion/outputs/` and reference them in `docs/`.
+- When citing numeric results, include the script name + args, hardware/OS details, and commit id used to generate them.
+
+## Example Repro Steps (safe, research-only)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r polymer-induced-fusion/requirements.txt
+python polymer-induced-fusion/plan_b_polymer_fusion.py --seed 42 --out polymer-induced-fusion/outputs/demo_results.json
+```
+
+## Where to attach artifacts
+
+- Place reproducibility artifacts under `polymer-induced-fusion/outputs/` and document commands and environment in `docs/RUN_NOTES.md`.
+
+## License
+
+This repository follows the existing project license. For public-facing claims, maintainers should attach reproducibility artifacts and UQ reports.
+
+```
 - **`polymer_fusion_framework.pdf`** - Comprehensive technical report
 - Multiple markdown reports with implementation summaries and validation results
 
