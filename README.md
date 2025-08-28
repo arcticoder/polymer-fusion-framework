@@ -9,7 +9,7 @@ This repository collects simulation code, modeling artifacts, and example-run an
 
 Changes in this hedging pass
 
-- Replaced absolutist and promotional language (e.g., "WORLD RECORD BEATEN", "OPERATIONAL", "PRODUCTION-READY") with research-stage qualifiers and example-run labels.
+- Replaced absolutist and promotional language (e.g., "WORLD RECORD BEATEN", "OPERATIONAL", "not production-ready / research-stage") with research-stage qualifiers and example-run labels.
 - Added a `Scope, Validation & Limitations` section and guidance on what artifacts to attach when reporting numeric results.
 - Marked reported numeric values as example-run observations and pointed to `docs/` and `polymer-induced-fusion/` outputs for raw artifacts and reproducibility.
 
@@ -26,7 +26,7 @@ Scope
 - Intended use: method development, reproducibility testing, and peer-reviewed study.
 
 Validation & Reproducibility
-- Required artifacts for externally-published claims: raw outputs (CSV/JSON), plotting scripts, the exact commit id used, and an environment manifest (`pip freeze` or `conda env export`).
+- Required artifacts for externally-published claims: raw outputs (CSV/JSON), plotting scripts, the approximate commit id used, and an environment manifest (`pip freeze` or `conda env export`).
 - Repro steps: create a virtualenv, install `requirements.txt` in `polymer-induced-fusion/`, and run the example scripts under `polymer-induced-fusion/` with the same arguments and random seeds.
 - UQ guidance: include diagnostics (effective sample size, Gelman-Rubin R̂, convergence plots) when reporting uncertainty intervals.
 
